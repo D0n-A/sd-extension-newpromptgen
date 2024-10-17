@@ -131,7 +131,7 @@ def add_tab():
     with gr.Blocks(analytics_enabled=False) as tab:
         with gr.Row():
             with gr.Column(scale=80):
-                prompt = gr.Textbox(label="Prompt", elem_id="promptgen_prompt", show_label=False, lines=2, placeholder="Beginning of the prompt (press Ctrl+Enter or Alt+Enter to generate)").style(container=False)
+                prompt = gr.Textbox(label="Prompt", elem_id="promptgen_prompt", show_label=False, lines=2, placeholder="Beginning of the prompt (press Ctrl+Enter or Alt+Enter to generate)", container=False)
             with gr.Column(scale=10):
                 submit = gr.Button('Generate', elem_id="promptgen_generate", variant='primary')
         with gr.Row(elem_id="promptgen_main"):
